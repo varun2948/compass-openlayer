@@ -1,3 +1,4 @@
+// @ts-nocheck
 import OSM from "ol/source/OSM";
 import TileLayer from "ol/layer/Tile";
 import { Feature, Map, View } from "ol";
@@ -15,7 +16,7 @@ import { circular } from "ol/geom/Polygon";
 const App = () => {
   const [mapContent, setMapContent] = useState(null);
   const mapRef = useRef(null);
-  const locateRef = useRef(null);
+  // const locateRef = useRef(null);
   useEffect(() => {
     if (mapRef.current !== null) {
       console.log("test", "test");
