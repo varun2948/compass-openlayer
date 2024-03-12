@@ -65,7 +65,7 @@ const App = () => {
         alert(`ERROR: ${error.message}`);
       },
       {
-        enableHighAccuracy: true,
+        enableHighAccuracy: false,
       }
     );
 
