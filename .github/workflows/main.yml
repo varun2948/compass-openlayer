@@ -1,4 +1,4 @@
-name: :triangular_flag_on_post: Deploy to GH-Pages
+name: Deploy to GH-Pages
 on:
   push:
     branches:
