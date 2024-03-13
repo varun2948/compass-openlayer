@@ -180,9 +180,12 @@ const BasicCompass = () => {
     ]).then((results) => {
       if (results.every((result) => result.state === "granted")) {
         sensor.start();
-        stat.value = "Sensor started!";
+        console.log("Sensor started!");
+
+        // stat.value = "Sensor started!";
       } else {
-        stat.value = "No permissions to use AbsoluteOrientationSensor.";
+        console.log("No permissions to use AbsoluteOrientationSensor.");
+        // stat.value = "No permissions to use AbsoluteOrientationSensor.";
       }
     });
   }, [mapContent]);
