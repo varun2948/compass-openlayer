@@ -16,7 +16,6 @@ import { circular } from "ol/geom/Polygon";
 const BasicCompass = () => {
   const [mapContent, setMapContent] = useState(null);
   const mapRef = useRef(null);
-  // const locateRef = useRef(null);
   useEffect(() => {
     if (mapRef.current !== null) {
       const map = new Map({
