@@ -13,6 +13,7 @@ import { Point } from "ol/geom";
 import logo from "./assets/navigation.svg";
 import Control from "ol/control/Control";
 import { circular } from "ol/geom/Polygon";
+import { Link } from "react-router-dom";
 const App = () => {
   const [mapContent, setMapContent] = useState(null);
   const mapRef = useRef(null);
@@ -133,7 +134,9 @@ const App = () => {
       id="map-container"
       style={{ height: "800px", width: "800px" }}
       ref={mapRef}
-    ></div>
+    >
+      <Link to="/compass-openlayer/compass">New Compass Route</Link>
+    </div>
   );
 };
 
