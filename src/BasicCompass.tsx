@@ -192,7 +192,9 @@ const BasicCompass = () => {
       id="map-container"
       style={{ height: "800px", width: "800px" }}
       ref={mapRef}
-    ></div>
+    >
+      <p>New Compass</p>
+    </div>
   );
 };
 
