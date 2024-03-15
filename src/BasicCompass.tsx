@@ -155,7 +155,8 @@ const BasicCompass = () => {
       //     rz.toFixed(3) +
       //     "\n\nHeading: " +
       //     heading;
-
+      console.log(heading, "heading");
+      console.log((Math.PI / 180) * heading, "(Math.PI / 180) * heading");
       // To make the arrow point north, rotate it opposite to the phone rotation.
       style.getImage().setRotation((Math.PI / 180) * heading);
     }
@@ -171,7 +172,7 @@ const BasicCompass = () => {
       handleReading(sensor.quaternion);
     });
 
-    handleReading([0.509, -0.071, -0.19, 0.836]);
+    // handleReading([0.509, -0.071, -0.19, 0.836]);
 
     Promise.all([
       navigator.permissions.query({ name: "accelerometer" }),

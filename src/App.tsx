@@ -127,6 +127,9 @@ const App = () => {
     } else {
       alert("No device orientation provided by device");
     }
+    return () => {
+      mapContent?.removeLayer(layer);
+    };
   }, [mapContent]);
 
   return (
