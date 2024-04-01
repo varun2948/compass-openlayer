@@ -8,12 +8,10 @@ import {
   Route,
   RouterProvider,
 } from "react-router-dom";
-import BasicCompass from "./BasicCompass.tsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <>
-      <Route path="/compass-openlayer/compass" element={<BasicCompass />} />
       <Route path="/compass-openlayer/" element={<App />} />
     </>
   )
